@@ -1,0 +1,18 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+from services import Services
+from news.models import Story
+#from el_pagination.views import AjaxListView
+
+def index(request):
+    serv = Services()
+    serv.get_topstories()
+
+    context = {
+        'title': 'HackerNews Clone',
+        'top_stories': Story.objects.all()
+    }
+    return render(request, 'index.html', context)
+    #return HttpResponse("Hello, world. You're at the polls index.")
+
+# Create your views here.

@@ -1,0 +1,74 @@
+/*    --------------------------------------------------
+    :: General
+    -------------------------------------------------- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #353535;
+}
+.media-photo {
+    width: 35px;
+}
+
+.content h1 {
+    text-align: center;
+}
+.content .content-footer p {
+    color: #6d6d6d;
+    font-size: 12px;
+    text-align: center;
+}
+.content .content-footer p a {
+    color: inherit;
+    font-weight: bold;
+}
+
+a {
+  padding-left: 5px;
+}
+
+/* some simple transitions to make the upvote and downvote
+buttons fade in as a visual cue for the user */
+
+.glyphicon {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.glyphicon:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}

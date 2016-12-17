@@ -1,0 +1,12 @@
+<!--DOCTYPE html -->
+<html>
+
+<body>
+<h1>{{ title }}</h1>
+
+{% for story in top_stories %}
+  {{story.score}} {{story.username}}<a href="{{ story.url }}">{{ story.title }}</a> {{story.sentiment}}
+<br/>
+{% endfor %}
+</body>
+</html>
